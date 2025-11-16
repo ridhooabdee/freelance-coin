@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-[#0F0E0E] flex min-h-screen overflow-hidden text-slate-100 p-8 font-mono">
+    <main>
+        <section class="w-full">
+            <button id="skipButton" class="fixed overflow-hidden top-4 right-4 text-white/70 border px-4 py-1 rounded-sm border-white/60 hover:border-white hover:text-white text-sm cursor-pointer group">
+                <span class="relative z-10">SKIP</span>
+            <span class="absolute left-0 bottom-0 w-full h-0 bg-blue-700 
+               transition-all duration-300 group-hover:h-full z-0"></span></button>
+            <div id="textContainer" class="text-md wrap-break-word whitespace-pre-line">
+                <p id="text" class="inline"></p><span class="inline-block w-[2px] h-[20px] bg-white ml-4 animate-blink" id="cursor"></span>
+            </div>
+        </section>
+        <div id="cursor-trail-container" class="pointer-events-none fixed inset-0 z-[9999]" aria-hidden="true"></div>
+    </main>
+    <script src="src/index.js"></script>
+</body>
+</html>
