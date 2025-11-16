@@ -6,7 +6,7 @@
     <title>Coin</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-[#0F0E0E] flex min-h-screen overflow-hidden text-slate-100 p-8 font-mono">
+<body class="bg-[#0F0E0E] flex min-h-screen overflow-scroll md:overflow-hidden text-slate-100 p-8 font-mono">
     <main>
         <section class="w-full">
             <button id="skipButton" class="fixed overflow-hidden top-4 right-4 text-white/70 border px-4 py-1 rounded-sm border-white/60 hover:border-white hover:text-white text-sm cursor-pointer group">
@@ -16,6 +16,7 @@
             <div id="textContainer" class="text-md wrap-break-word whitespace-pre-line">
                 <p id="text" class="inline"></p><span class="inline-block w-[2px] h-[20px] bg-white ml-4 animate-blink" id="cursor"></span>
             </div>
+            <img src="src/img/coin.png" alt="Literal Shit Coin" class=" w-16 h-16 fixed bottom-2 right-2 md:w-20 md:h-20 md:bottom-4 md:right-4 z-0 pointer-events-none select-none">
         </section>
         <div id="cursor-trail-container" class="pointer-events-none fixed inset-0 z-[9999]" aria-hidden="true"></div>
     </main>

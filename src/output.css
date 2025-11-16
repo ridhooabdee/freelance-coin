@@ -193,11 +193,20 @@
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
+  .right-2 {
+    right: calc(var(--spacing) * 2);
+  }
   .right-4 {
     right: calc(var(--spacing) * 4);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -253,6 +262,15 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-22 {
+    height: calc(var(--spacing) * 22);
+  }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
   .h-\[20px\] {
     height: 20px;
   }
@@ -264,6 +282,15 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-22 {
+    width: calc(var(--spacing) * 22);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
   .w-\[2px\] {
     width: 2px;
@@ -288,6 +315,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-scroll {
+    overflow: scroll;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -363,6 +393,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .opacity-30 {
+    opacity: 30%;
+  }
   .shadow-\[0_0_12px_6px_rgba\(0\,150\,255\,0\.8\)\] {
     --tw-shadow: 0 0 12px 6px var(--tw-shadow-color, rgba(0,150,255,0.8));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -391,6 +424,10 @@
     --tw-ease: var(--ease-out);
     transition-timing-function: var(--ease-out);
   }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
   .group-hover\:h-full {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -410,6 +447,46 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+  }
+  .md\:right-4 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:bottom-4 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:h-20 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:w-20 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:overflow-hidden {
+    @media (width >= 48rem) {
+      overflow: hidden;
+    }
+  }
+  .xl\:fixed {
+    @media (width >= 80rem) {
+      position: fixed;
+    }
+  }
+  .xl\:right-4 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 4);
+    }
+  }
+  .xl\:bottom-4 {
+    @media (width >= 80rem) {
+      bottom: calc(var(--spacing) * 4);
     }
   }
 }
