@@ -12,8 +12,9 @@ function typeText() {
         textElement.textContent += text.charAt(index);
         index++;
         typingInterval=setTimeout(typeText, 30);
-    } else if (isSkipping) {
+    } else{
         textElement.textContent = text;
+        cursor.style.display = 'none';
     }
 }
 
